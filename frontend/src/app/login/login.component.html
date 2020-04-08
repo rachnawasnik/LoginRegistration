@@ -1,0 +1,19 @@
+<p>Login</p>
+<form [formGroup] = "loginform">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input formControlName="email" type="email" class="form-control loginwidth" id="emailInput" aria-describedby="emailHelp">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input formControlName="password" type="password" class="form-control loginwidth" id="passwordInput">
+    </div>
+    <!-- <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div> -->
+    <button type="submit" class="btn btn-primary" (click) = "login()">Login</button>
+    
+    <button type="submit" class="btn btn-primary" (click) = "movetoregister()">Register</button>
+  </form>
