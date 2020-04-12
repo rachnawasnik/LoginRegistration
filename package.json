@@ -1,0 +1,8 @@
+
+{
+    "name": "LoginRegistration",
+    "version": "0.1.0",
+    "scripts": {
+      "postinstall": "npm install --prefix expressapp && npm install --prefix frontend"
+    }
+  }
