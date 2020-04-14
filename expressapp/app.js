@@ -65,6 +65,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.listen(process.env.PORT || 8080); // line added for heroku deployment
+
 
 
 // catch 404 and forward to error handler
