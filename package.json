@@ -4,6 +4,6 @@
     "version": "0.1.0",
     "scripts": {
      
-        "postinstall": "npm install --prefix expressapp"
+        "postinstall": "npm install --prefix frontend && npm install --prefix expressapp"
     }
   }
